@@ -1,0 +1,43 @@
+=== JSON ===
+
+{
+    "update_id": 592564470,
+    "message": {
+        "message_id": 3887,
+        "from": {
+            "id": 377819118,
+            "is_bot": false,
+            "first_name": "phpGuru",
+            "username": "phpGuru",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 377819118,
+            "first_name": "phpGuru",
+            "username": "phpGuru",
+            "type": "private"
+        },
+        "date": 1597583317,
+        "sticker": {
+            "width": 512,
+            "height": 512,
+            "emoji": "\ud83c\udf10",
+            "set_name": "ci_cat",
+            "is_animated": false,
+            "thumb": {
+                "file_id": "AAMCAgADGQEAAg8vXzkv1VA5EdYNdV_xubuA6t2Tl0EAAiAAAxbx6hKg1mtJa2NBYF1rtw0ABAEAB20AAw0oAAIaBA",
+                "file_unique_id": "AQADXWu3DQAEDSgAAg",
+                "file_size": 6002,
+                "width": 128,
+                "height": 128
+            },
+            "file_id": "CAACAgIAAxkBAAIPL185L9VQORHWDXVf8bm7gOrdk5dBAAIgAAMW8eoSoNZrSWtjQWAaBA",
+            "file_unique_id": "AgADIAADFvHqEg",
+            "file_size": 28114
+        }
+    }
+}
+
+=== HTTP QUERY ===
+
+update_id=592564470&message%5Bmessage_id%5D=3887&message%5Bfrom%5D%5Bid%5D=377819118&message%5Bfrom%5D%5Bis_bot%5D=0&message%5Bfrom%5D%5Bfirst_name%5D=phpGuru&message%5Bfrom%5D%5Busername%5D=phpGuru&message%5Bfrom%5D%5Blanguage_code%5D=ru&message%5Bchat%5D%5Bid%5D=377819118&message%5Bchat%5D%5Bfirst_name%5D=phpGuru&message%5Bchat%5D%5Busername%5D=phpGuru&message%5Bchat%5D%5Btype%5D=private&message%5Bdate%5D=1597583317&message%5Bsticker%5D%5Bwidth%5D=512&message%5Bsticker%5D%5Bheight%5D=512&message%5Bsticker%5D%5Bemoji%5D=%F0%9F%8C%90&message%5Bsticker%5D%5Bset_name%5D=ci_cat&message%5Bsticker%5D%5Bis_animated%5D=0&message%5Bsticker%5D%5Bthumb%5D%5Bfile_id%5D=AAMCAgADGQEAAg8vXzkv1VA5EdYNdV_xubuA6t2Tl0EAAiAAAxbx6hKg1mtJa2NBYF1rtw0ABAEAB20AAw0oAAIaBA&message%5Bsticker%5D%5Bthumb%5D%5Bfile_unique_id%5D=AQADXWu3DQAEDSgAAg&message%5Bsticker%5D%5Bthumb%5D%5Bfile_size%5D=6002&message%5Bsticker%5D%5Bthumb%5D%5Bwidth%5D=128&message%5Bsticker%5D%5Bthumb%5D%5Bheight%5D=128&message%5Bsticker%5D%5Bfile_id%5D=CAACAgIAAxkBAAIPL185L9VQORHWDXVf8bm7gOrdk5dBAAIgAAMW8eoSoNZrSWtjQWAaBA&message%5Bsticker%5D%5Bfile_unique_id%5D=AgADIAADFvHqEg&message%5Bsticker%5D%5Bfile_size%5D=28114

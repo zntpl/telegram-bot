@@ -1,0 +1,34 @@
+=== JSON ===
+
+{
+    "update_id": 592564472,
+    "message": {
+        "message_id": 3889,
+        "from": {
+            "id": 377819118,
+            "is_bot": false,
+            "first_name": "phpGuru",
+            "username": "phpGuru",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 377819118,
+            "first_name": "phpGuru",
+            "username": "phpGuru",
+            "type": "private"
+        },
+        "date": 1597583419,
+        "document": {
+            "file_name": "regexp.exp",
+            "mime_type": "text\/plain",
+            "file_id": "BQACAgIAAxkBAAIPMV85MDsGK5WNyEUtPA9dvpwmetM8AAKhBwACTOzQSUcocTR_eDSHGgQ",
+            "file_unique_id": "AgADoQcAAkzs0Ek",
+            "file_size": 20649
+        }
+    }
+}
+
+=== HTTP QUERY ===
+
+update_id=592564472&message%5Bmessage_id%5D=3889&message%5Bfrom%5D%5Bid%5D=377819118&message%5Bfrom%5D%5Bis_bot%5D=0&message%5Bfrom%5D%5Bfirst_name%5D=phpGuru&message%5Bfrom%5D%5Busername%5D=phpGuru&message%5Bfrom%5D%5Blanguage_code%5D=ru&message%5Bchat%5D%5Bid%5D=377819118&message%5Bchat%5D%5Bfirst_name%5D=phpGuru&message%5Bchat%5D%5Busername%5D=phpGuru&message%5Bchat%5D%5Btype%5D=private&message%5Bdate%5D=1597583419&message%5Bdocument%5D%5Bfile_name%5D=regexp.exp&message%5Bdocument%5D%5Bmime_type%5D=text%2Fplain&message%5Bdocument%5D%5Bfile_id%5D=BQACAgIAAxkBAAIPMV85MDsGK5WNyEUtPA9dvpwmetM8AAKhBwACTOzQSUcocTR_eDSHGgQ&message%5Bdocument%5D%5Bfile_unique_id%5D=AgADoQcAAkzs0Ek&message%5Bdocument%5D%5Bfile_size%5D=20649
+

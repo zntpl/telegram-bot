@@ -1,0 +1,43 @@
+=== JSON ===
+
+{
+    "update_id": 592564471,
+    "message": {
+        "message_id": 3888,
+        "from": {
+            "id": 377819118,
+            "is_bot": false,
+            "first_name": "phpGuru",
+            "username": "phpGuru",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 377819118,
+            "first_name": "phpGuru",
+            "username": "phpGuru",
+            "type": "private"
+        },
+        "date": 1597583371,
+        "photo": [
+            {
+                "file_id": "AgACAgIAAxkBAAIPMF85MAsxIHXG8T_4Yb4RH6OhJ8xDAAJrsTEbTOzQSVvGaW9l1w9P4gwFki4AAwEAAwIAA20AA60wBQABGgQ",
+                "file_unique_id": "AQAD4gwFki4AA60wBQAB",
+                "file_size": 20214,
+                "width": 320,
+                "height": 213
+            },
+            {
+                "file_id": "AgACAgIAAxkBAAIPMF85MAsxIHXG8T_4Yb4RH6OhJ8xDAAJrsTEbTOzQSVvGaW9l1w9P4gwFki4AAwEAAwIAA3gAA64wBQABGgQ",
+                "file_unique_id": "AQAD4gwFki4AA64wBQAB",
+                "file_size": 62540,
+                "width": 768,
+                "height": 512
+            }
+        ]
+    }
+}
+
+=== HTTP QUERY ===
+
+update_id=592564471&message%5Bmessage_id%5D=3888&message%5Bfrom%5D%5Bid%5D=377819118&message%5Bfrom%5D%5Bis_bot%5D=0&message%5Bfrom%5D%5Bfirst_name%5D=phpGuru&message%5Bfrom%5D%5Busername%5D=phpGuru&message%5Bfrom%5D%5Blanguage_code%5D=ru&message%5Bchat%5D%5Bid%5D=377819118&message%5Bchat%5D%5Bfirst_name%5D=phpGuru&message%5Bchat%5D%5Busername%5D=phpGuru&message%5Bchat%5D%5Btype%5D=private&message%5Bdate%5D=1597583371&message%5Bphoto%5D%5B0%5D%5Bfile_id%5D=AgACAgIAAxkBAAIPMF85MAsxIHXG8T_4Yb4RH6OhJ8xDAAJrsTEbTOzQSVvGaW9l1w9P4gwFki4AAwEAAwIAA20AA60wBQABGgQ&message%5Bphoto%5D%5B0%5D%5Bfile_unique_id%5D=AQAD4gwFki4AA60wBQAB&message%5Bphoto%5D%5B0%5D%5Bfile_size%5D=20214&message%5Bphoto%5D%5B0%5D%5Bwidth%5D=320&message%5Bphoto%5D%5B0%5D%5Bheight%5D=213&message%5Bphoto%5D%5B1%5D%5Bfile_id%5D=AgACAgIAAxkBAAIPMF85MAsxIHXG8T_4Yb4RH6OhJ8xDAAJrsTEbTOzQSVvGaW9l1w9P4gwFki4AAwEAAwIAA3gAA64wBQABGgQ&message%5Bphoto%5D%5B1%5D%5Bfile_unique_id%5D=AQAD4gwFki4AA64wBQAB&message%5Bphoto%5D%5B1%5D%5Bfile_size%5D=62540&message%5Bphoto%5D%5B1%5D%5Bwidth%5D=768&message%5Bphoto%5D%5B1%5D%5Bheight%5D=512
+
