@@ -1,19 +1,22 @@
 {
-    "name": "php7tpl/telegram-client",
+    "name": "zntpl/telegram-client",
     "minimum-stability":"dev",
     "require": {
         "php": "^7.2",
         "guzzlehttp/guzzle": "6.*",
-        "php7bundle/telegram-client": "dev-master",
-        "php7lab/eloquent": "dev-master",
+
+        "znsandbox/telegram": "dev-master",
+        "zncore/db": "dev-master",
+        "zncore/ddd": "dev-master",
+
         "symfony/cache": "^5.2@dev",
         "symfony/validator": "4.*",
         "workerman/workerman": "^4.0",
         "ext-json": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "6.*",
-        "php7lab/dev": "dev-master"
+        "zntool/dev": "dev-master",
+        "zntool/test": "dev-master"
     },
     "config": {
         "sort-packages": true
@@ -32,15 +35,12 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/php7lab/eloquent.git"
+            "url": "https://github.com/znsandbox/telegram"
         },
+
         {
             "type": "git",
             "url": "https://github.com/php7fork/danog_madelineproto.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/php7bundle/telegram-client.git"
         }
     ]
 }
