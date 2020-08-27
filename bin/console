@@ -15,8 +15,6 @@ $rootPath = realpath(__DIR__ . '/..');
 DotEnvHelper::init($rootPath);
 $container = Container::getInstance();
 
-FileHelper::save(__DIR__ . '/../var/testConsole/' . date('Y_m_d H_i_s') . '.json', json_encode($_SERVER, JSON_PRETTY_PRINT));
-
 include __DIR__ . '/../config/bootstrap.php';
 
 $consoleConfig = include __DIR__ . '/../config/console.php';

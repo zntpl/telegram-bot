@@ -4,8 +4,10 @@
     "require": {
         "php": "^7.2",
         "guzzlehttp/guzzle": "6.*",
-        "php7bundle/telegram-client": "dev-master",
-        "php7lab/eloquent": "dev-master",
+
+        "znsandbox/telegram": "dev-master",
+        "zncore/db": "dev-master",
+
         "symfony/cache": "^5.2@dev",
         "symfony/validator": "4.*",
         "workerman/workerman": "^4.0",
@@ -32,15 +34,11 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/php7lab/eloquent.git"
+            "url": "https://github.com/zncore/db.git"
         },
         {
             "type": "git",
-            "url": "https://github.com/php7fork/danog_madelineproto.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/php7bundle/telegram-client.git"
+            "url": "https://github.com/znsandbox/telegram.git"
         }
     ]
 }
