@@ -3,11 +3,11 @@
 namespace App\Dialog\Domain\Actions;
 
 use App\Core\Entities\RequestEntity;
-use PhpBundle\TelegramClient\Base\BaseAction;
-use PhpBundle\TelegramClient\Entities\MessageEntity;
-use PhpBundle\TelegramClient\Helpers\MatchHelper;
+use ZnSandbox\Telegram\Base\BaseAction;
+use ZnSandbox\Telegram\Entities\MessageEntity;
+use ZnSandbox\Telegram\Helpers\MatchHelper;
 use danog\MadelineProto\APIFactory;
-use PhpLab\Core\Helpers\StringHelper;
+use ZnCore\Base\Helpers\StringHelper;
 
 class SearchAction extends BaseAction
 {

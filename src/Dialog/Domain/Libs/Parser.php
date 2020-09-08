@@ -2,8 +2,8 @@
 
 namespace App\Dialog\Domain\Libs;
 
-use PhpBundle\TelegramClient\Helpers\MatchHelper;
-use PhpLab\Core\Helpers\StringHelper;
+use ZnSandbox\Telegram\Helpers\MatchHelper;
+use ZnCore\Base\Helpers\StringHelper;
 
 class Parser {
 

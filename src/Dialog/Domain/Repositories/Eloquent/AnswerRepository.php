@@ -2,7 +2,7 @@
 
 namespace App\Dialog\Domain\Repositories\Eloquent;
 
-use PhpLab\Eloquent\Db\Base\BaseEloquentCrudRepository;
+use ZnCore\Db\Db\Base\BaseEloquentCrudRepository;
 use App\Dialog\Domain\Entities\AnswerEntity;
 use App\Dialog\Domain\Interfaces\Repositories\AnswerRepositoryInterface;
 

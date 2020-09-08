@@ -4,7 +4,7 @@
 namespace App\Core\Entities;
 
 
-use PhpLab\Core\Legacy\Yii\Helpers\ArrayHelper;
+use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 
 class ResponseEntity
 {

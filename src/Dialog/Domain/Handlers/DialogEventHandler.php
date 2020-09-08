@@ -3,16 +3,16 @@
 namespace App\Dialog\Domain\Handlers;
 
 use App\Dialog\Domain\Actions\DataBaseAction;
-use PhpBundle\TelegramClient\Actions\EchoAction;
-use PhpBundle\TelegramClient\Actions\GroupAction;
-use PhpBundle\TelegramClient\Actions\HelpAction;
-use PhpBundle\TelegramClient\Actions\SendMessageAction;
-use PhpBundle\TelegramClient\Actions\ShutdownServerAction;
-use PhpBundle\TelegramClient\Handlers\BaseInputMessageEventHandler;
-use PhpBundle\TelegramClient\Matchers\AnyMatcher;
-use PhpBundle\TelegramClient\Matchers\EqualOfPatternsMatcher;
-use PhpBundle\TelegramClient\Matchers\GroupAndMatcher;
-use PhpBundle\TelegramClient\Matchers\IsAdminMatcher;
+use ZnSandbox\Telegram\Actions\EchoAction;
+use ZnSandbox\Telegram\Actions\GroupAction;
+use ZnSandbox\Telegram\Actions\HelpAction;
+use ZnSandbox\Telegram\Actions\SendMessageAction;
+use ZnSandbox\Telegram\Actions\ShutdownServerAction;
+use ZnSandbox\Telegram\Handlers\BaseInputMessageEventHandler;
+use ZnSandbox\Telegram\Matchers\AnyMatcher;
+use ZnSandbox\Telegram\Matchers\EqualOfPatternsMatcher;
+use ZnSandbox\Telegram\Matchers\GroupAndMatcher;
+use ZnSandbox\Telegram\Matchers\IsAdminMatcher;
 use App\Dialog\Domain\Actions\SearchAction;
 
 class DialogEventHandler extends BaseInputMessageEventHandler
@@ -37,7 +37,7 @@ class DialogEventHandler extends BaseInputMessageEventHandler
                     new EqualOfPatternsMatcher(['~']),
                 ]),
                 'action' => new GroupAction([
-                    new \PhpBundle\TelegramClient\Actions\ConsoleCommandAction(),
+                    new \ZnSandbox\Telegram\Actions\ConsoleCommandAction(),
                 ]),
                 'help' => '~ - выполнить команду в консоли',
             ],

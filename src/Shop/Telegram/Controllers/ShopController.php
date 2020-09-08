@@ -5,7 +5,7 @@ namespace App\Shop\Telegram\Controllers;
 
 
 use App\Core\Entities\RequestEntity;
-use PhpBundle\TelegramClient\Interfaces\MatcherInterface;
+use ZnSandbox\Telegram\Interfaces\MatcherInterface;
 
 class ShopController
 {

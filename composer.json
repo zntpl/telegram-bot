@@ -1,5 +1,5 @@
 {
-    "name": "zntpl/telegram-client",
+    "name": "php7tpl/telegram-client",
     "minimum-stability":"dev",
     "require": {
         "php": "^7.2",
@@ -7,7 +7,6 @@
 
         "znsandbox/telegram": "dev-master",
         "zncore/db": "dev-master",
-        "zncore/ddd": "dev-master",
 
         "symfony/cache": "^5.2@dev",
         "symfony/validator": "4.*",
@@ -15,8 +14,8 @@
         "ext-json": "*"
     },
     "require-dev": {
-        "zntool/dev": "dev-master",
-        "zntool/test": "dev-master"
+        "phpunit/phpunit": "6.*",
+        "php7lab/dev": "dev-master"
     },
     "config": {
         "sort-packages": true
@@ -35,12 +34,11 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/znsandbox/telegram"
+            "url": "https://github.com/zncore/db.git"
         },
-
         {
             "type": "git",
-            "url": "https://github.com/php7fork/danog_madelineproto.git"
+            "url": "https://github.com/znsandbox/telegram.git"
         }
     ]
 }

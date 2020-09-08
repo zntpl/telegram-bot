@@ -2,11 +2,11 @@
 <?php
 
 use Illuminate\Container\Container;
-use PhpLab\Core\Legacy\Yii\Helpers\FileHelper;
+use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
 use Symfony\Component\Console\Application;
 use Psr\Container\ContainerInterface;
-use PhpLab\Core\Libs\Env\DotEnvHelper;
-use PhpLab\Core\Console\Helpers\CommandHelper;
+use ZnCore\Base\Libs\Env\DotEnvHelper;
+use ZnCore\Base\Console\Helpers\CommandHelper;
 
 /** @var ContainerInterface $container */
 
@@ -14,8 +14,6 @@ require_once __DIR__ . '/../src/Bootstrap/autoload.php';
 $rootPath = realpath(__DIR__ . '/..');
 DotEnvHelper::init($rootPath);
 $container = Container::getInstance();
-
-FileHelper::save(__DIR__ . '/../var/testConsole/' . date('Y_m_d H_i_s') . '.json', json_encode($_SERVER, JSON_PRETTY_PRINT));
 
 include __DIR__ . '/../config/bootstrap.php';
 

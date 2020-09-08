@@ -38,7 +38,7 @@ $pharPath = 'phar://' . $vendorDir;
 //exit($pharPath . '/vendor.phar/autoload.php');
 require_once $pharPath . '/vendor.phar/autoload.php';
 
-/*use PhpLab\Core\Legacy\Yii\Helpers\FileHelper;
+/*use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
 exit(FileHelper::path('jhgfd'));*/
 
 $Telegram_botkey= '773713470:AAHTBIYMDvcreuZBxKpvAQWVLOQOG24F-mE';
