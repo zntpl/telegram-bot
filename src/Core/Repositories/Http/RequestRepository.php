@@ -7,7 +7,7 @@ use App\Core\Entities\ChatEntity;
 use App\Core\Entities\FromEntity;
 use App\Core\Entities\MessageEntity;
 use App\Core\Entities\RequestEntity;
-use PhpLab\Core\Domain\Helpers\EntityHelper;
+use ZnCore\Base\Domain\Helpers\EntityHelper;
 
 class RequestRepository
 {

@@ -2,7 +2,7 @@
 
 use App\Bootstrap\Kernel;
 use App\Client\Controllers\IndexController;
-use PhpLab\Core\Libs\Env\DotEnvHelper;
+use ZnCore\Base\Libs\Env\DotEnvHelper;
 use Psr\Container\ContainerInterface;
 
 /** @var ContainerInterface $container */

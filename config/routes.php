@@ -1,11 +1,11 @@
 <?php
 
-use PhpBundle\TelegramClient\Actions\EchoAction;
-use PhpBundle\TelegramClient\Actions\GroupAction;
-use PhpBundle\TelegramClient\Actions\SendButtonAction;
-use PhpBundle\TelegramClient\Actions\SendMessageAction;
-use PhpBundle\TelegramClient\Matchers\EqualOfPatternsMatcher;
-use PhpBundle\TelegramClient\Matchers\GroupAndMatcher;
+use ZnSandbox\Telegram\Actions\EchoAction;
+use ZnSandbox\Telegram\Actions\GroupAction;
+use ZnSandbox\Telegram\Actions\SendButtonAction;
+use ZnSandbox\Telegram\Actions\SendMessageAction;
+use ZnSandbox\Telegram\Matchers\EqualOfPatternsMatcher;
+use ZnSandbox\Telegram\Matchers\GroupAndMatcher;
 
 $simpleQuestions = [
     'что такое',
@@ -100,7 +100,7 @@ $routes = [
             new EqualOfPatternsMatcher(['~']),
         ]),
         'action' => new GroupAction([
-            new \PhpBundle\TelegramClient\Actions\ConsoleCommandAction(),
+            new \ZnSandbox\Telegram\Actions\ConsoleCommandAction(),
         ]),
         'help' => '~ - выполнить команду в консоли',
     ],

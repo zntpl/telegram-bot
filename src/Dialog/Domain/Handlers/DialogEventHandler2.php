@@ -2,7 +2,7 @@
 
 namespace App\Dialog\Domain\Handlers;
 
-use PhpBundle\TelegramClient\Handlers\BaseInputMessageEventHandler2;
+use ZnSandbox\Telegram\Handlers\BaseInputMessageEventHandler2;
 
 class DialogEventHandler2 extends BaseInputMessageEventHandler2
 {

@@ -2,17 +2,17 @@
 
 namespace App\Dialog\Domain\Services;
 
-use PhpBundle\TelegramClient\Libs\SoundexRuEn;
+use ZnSandbox\Telegram\Libs\SoundexRuEn;
 use App\Dialog\Domain\Entities\AnswerEntity;
-use PhpBundle\TelegramClient\Helpers\MatchHelper;
+use ZnSandbox\Telegram\Helpers\MatchHelper;
 use App\Dialog\Domain\Helpers\WordHelper;
 use App\Dialog\Domain\Libs\Parser;
 use Illuminate\Container\Container;
 use Illuminate\Support\Collection;
-use PhpLab\Core\Domain\Helpers\EntityHelper;
-use PhpLab\Core\Exceptions\NotFoundException;
-use PhpLab\Core\Helpers\StringHelper;
-use PhpLab\Core\Libs\Container\ContainerAwareTrait;
+use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Base\Exceptions\NotFoundException;
+use ZnCore\Base\Helpers\StringHelper;
+use ZnCore\Base\Libs\Container\ContainerAwareTrait;
 
 class PredictService
 {

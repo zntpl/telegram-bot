@@ -2,9 +2,9 @@
 
 namespace App\Dialog\Domain\Helpers;
 
-use PhpBundle\TelegramClient\Helpers\MatchHelper;
+use ZnSandbox\Telegram\Helpers\MatchHelper;
 use App\Dialog\Domain\Libs\Parser;
-use PhpLab\Core\Helpers\StringHelper;
+use ZnCore\Base\Helpers\StringHelper;
 
 class WordHelper
 {

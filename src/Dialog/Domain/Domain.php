@@ -2,7 +2,7 @@
 
 namespace App\Dialog\Domain;
 
-use PhpLab\Core\Domain\Interfaces\DomainInterface;
+use ZnCore\Base\Domain\Interfaces\DomainInterface;
 
 class Domain implements DomainInterface
 {

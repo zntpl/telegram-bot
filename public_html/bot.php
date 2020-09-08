@@ -6,7 +6,7 @@ ini_set('display_errors', 1);
 use App\Bootstrap\Kernel;
 use App\Core\Controllers\BotController;
 use App\Core\Services\ResponseService;
-use PhpLab\Core\Libs\Env\DotEnvHelper;
+use ZnCore\Base\Libs\Env\DotEnvHelper;
 use Psr\Container\ContainerInterface;
 
 /** @var ContainerInterface $container */

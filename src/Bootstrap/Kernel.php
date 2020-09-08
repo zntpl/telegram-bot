@@ -9,7 +9,7 @@ use App\Core\Services\RequestService;
 use App\Core\Services\ResponseService;
 use danog\MadelineProto\API;
 use Illuminate\Container\Container;
-use PhpLab\Core\Legacy\Yii\Helpers\FileHelper;
+use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\Console\Application;
 
@@ -43,9 +43,9 @@ class Kernel
 
         /*$container->bind(Application::class, Application::class, true);
         $this->bindApi($container);
-        $container->bind(\PhpBundle\TelegramClient\Services\ResponseService::class, \PhpBundle\TelegramClient\Services\ResponseService::class, true);
-        $container->bind(\PhpBundle\TelegramClient\Services\StateService::class, \PhpBundle\TelegramClient\Services\StateService::class, true);
-        $container->bind(\PhpBundle\TelegramClient\Services\UserService::class, \PhpBundle\TelegramClient\Services\UserService::class, true);
+        $container->bind(\ZnSandbox\Telegram\Services\ResponseService::class, \ZnSandbox\Telegram\Services\ResponseService::class, true);
+        $container->bind(\ZnSandbox\Telegram\Services\StateService::class, \ZnSandbox\Telegram\Services\StateService::class, true);
+        $container->bind(\ZnSandbox\Telegram\Services\UserService::class, \ZnSandbox\Telegram\Services\UserService::class, true);
 
         $container->bind(\MyBundles\Top\Domain\Interfaces\Repositories\ShopRepositoryInterface::class, \MyBundles\Top\Domain\Repositories\Eloquent\ShopRepository::class);
         */
@@ -56,7 +56,7 @@ class Kernel
         $container->bind(\App\Dialog\Domain\Interfaces\Repositories\AnswerOptionRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\AnswerOptionRepository::class);
 
         $container->bind(FilesystemAdapter::class, function () {
-            return new FilesystemAdapter('app', \PhpLab\Core\Enums\Measure\TimeEnum::SECOND_PER_HOUR, $_ENV['CACHE_DIRECTORY']);
+            return new FilesystemAdapter('app', \ZnCore\Base\Enums\Measure\TimeEnum::SECOND_PER_HOUR, $_ENV['CACHE_DIRECTORY']);
         }, true);
     }
 
