@@ -15,7 +15,7 @@
     },
     "require-dev": {
         "phpunit/phpunit": "6.*",
-        "php7lab/dev": "dev-master"
+        "zntool/dev": "dev-master"
     },
     "config": {
         "sort-packages": true
@@ -32,10 +32,6 @@
         }
     },
     "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/zncore/db.git"
-        },
         {
             "type": "git",
             "url": "https://github.com/znsandbox/telegram.git"
