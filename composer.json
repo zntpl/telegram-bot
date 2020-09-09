@@ -5,7 +5,7 @@
         "php": "^7.2",
         "guzzlehttp/guzzle": "6.*",
 
-        "znsandbox/telegram": "dev-master",
+        "znsandbox/sandbox": "dev-master",
         "zncore/db": "dev-master",
         "zncore/domain": "dev-master",
 
@@ -33,9 +33,6 @@
         }
     },
     "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/znsandbox/telegram.git"
-        }
+
     ]
 }
