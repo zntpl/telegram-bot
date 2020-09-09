@@ -7,7 +7,7 @@ use App\Core\Entities\ChatEntity;
 use App\Core\Entities\FromEntity;
 use App\Core\Entities\MessageEntity;
 use App\Core\Entities\RequestEntity;
-use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Domain\Helpers\EntityHelper;
 
 class RequestRepository
 {

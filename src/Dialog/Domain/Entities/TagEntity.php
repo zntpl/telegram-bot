@@ -4,8 +4,8 @@ namespace App\Dialog\Domain\Entities;
 
 use ZnSandbox\Telegram\Libs\SoundexRuEn;
 use Symfony\Component\Validator\Constraints as Assert;
-use ZnCore\Base\Domain\Interfaces\Entity\ValidateEntityInterface;
-use ZnCore\Base\Domain\Interfaces\Entity\EntityIdInterface;
+use ZnCore\Domain\Interfaces\Entity\ValidateEntityInterface;
+use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;
 
 class TagEntity implements ValidateEntityInterface, EntityIdInterface
 {

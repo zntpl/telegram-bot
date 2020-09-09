@@ -9,10 +9,10 @@ use App\Dialog\Domain\Interfaces\Services\TagServiceInterface;
 use App\Dialog\Domain\Libs\Parser;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\Collection;
-use ZnCore\Base\Domain\Base\BaseCrudService;
-use ZnCore\Base\Domain\Entities\Query\Where;
-use ZnCore\Base\Domain\Enums\OperatorEnum;
-use ZnCore\Base\Domain\Libs\Query;
+use ZnCore\Domain\Base\BaseCrudService;
+use ZnCore\Domain\Entities\Query\Where;
+use ZnCore\Domain\Enums\OperatorEnum;
+use ZnCore\Domain\Libs\Query;
 use ZnCore\Base\Helpers\StringHelper;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 

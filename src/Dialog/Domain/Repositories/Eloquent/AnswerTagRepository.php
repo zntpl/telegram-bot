@@ -5,7 +5,7 @@ namespace App\Dialog\Domain\Repositories\Eloquent;
 use App\Dialog\Domain\Entities\AnswerTagEntity;
 use App\Dialog\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface;
 use Illuminate\Support\Collection;
-use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Domain\Helpers\EntityHelper;
 use ZnCore\Db\Db\Base\BaseEloquentCrudRepository;
 
 class AnswerTagRepository extends BaseEloquentCrudRepository implements AnswerTagRepositoryInterface

@@ -7,7 +7,7 @@ use App\Core\Entities\BotEntity;
 use App\Core\Entities\ResponseEntity;
 use App\Core\Helpers\HttpHelper;
 use App\Core\Interfaces\Repositories\ResponseRepositoryInterface;
-use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Domain\Helpers\EntityHelper;
 
 class ResponseRepository implements ResponseRepositoryInterface
 {

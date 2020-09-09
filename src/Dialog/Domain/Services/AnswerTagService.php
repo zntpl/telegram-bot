@@ -4,8 +4,8 @@ namespace App\Dialog\Domain\Services;
 
 use App\Dialog\Domain\Interfaces\Services\AnswerTagServiceInterface;
 use App\Dialog\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface;
-use ZnCore\Base\Domain\Base\BaseCrudService;
-use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Domain\Base\BaseCrudService;
+use ZnCore\Domain\Helpers\EntityHelper;
 
 class AnswerTagService extends BaseCrudService implements AnswerTagServiceInterface
 {

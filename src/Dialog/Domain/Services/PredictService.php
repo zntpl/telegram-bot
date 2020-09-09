@@ -9,7 +9,7 @@ use App\Dialog\Domain\Helpers\WordHelper;
 use App\Dialog\Domain\Libs\Parser;
 use Illuminate\Container\Container;
 use Illuminate\Support\Collection;
-use ZnCore\Base\Domain\Helpers\EntityHelper;
+use ZnCore\Domain\Helpers\EntityHelper;
 use ZnCore\Base\Exceptions\NotFoundException;
 use ZnCore\Base\Helpers\StringHelper;
 use ZnCore\Base\Libs\Container\ContainerAwareTrait;

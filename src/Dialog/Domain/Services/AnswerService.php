@@ -5,8 +5,8 @@ namespace App\Dialog\Domain\Services;
 use App\Dialog\Domain\Entities\AnswerEntity;
 use App\Dialog\Domain\Interfaces\Services\AnswerServiceInterface;
 use App\Dialog\Domain\Interfaces\Repositories\AnswerRepositoryInterface;
-use ZnCore\Base\Domain\Base\BaseCrudService;
-use ZnCore\Base\Domain\Libs\Query;
+use ZnCore\Domain\Base\BaseCrudService;
+use ZnCore\Domain\Libs\Query;
 
 class AnswerService extends BaseCrudService implements AnswerServiceInterface
 {
