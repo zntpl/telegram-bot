@@ -4,7 +4,7 @@ cd ../..
 rm -rf var/cache/test/*
 rm var/log/test.log
 
-cd vendor/php7lab/eloquent/bin
+cd vendor/zncore/db/bin
 php console_test db:migrate:down --withConfirm=0
 php console_test db:delete-all-tables --withConfirm=0
 php console_test db:migrate:up --withConfirm=0

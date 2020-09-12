@@ -1,3 +1,3 @@
 #!/bin/sh
-cd ../../vendor/php7lab/eloquent/bin
+cd ../../vendor/zncore/db/bin
 php console db:fixture:import

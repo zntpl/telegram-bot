@@ -1,7 +1,7 @@
 @echo off
 
 set rootDir="%~dp0/../.."
-set eloquentBinDir="%rootDir%/vendor/php7lab/eloquent/bin"
+set eloquentBinDir="%rootDir%/vendor/zncore/db/bin"
 set phpunit="vendor/phpunit/phpunit/phpunit"
 set cacheDir="var/cache/test"
 

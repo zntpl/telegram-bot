@@ -1,7 +1,7 @@
 @echo off
 
 set rootDir="%~dp0/../.."
-set binDir=%rootDir%/vendor/php7lab/dev/bin
+set binDir=%rootDir%/vendor/zntool/dev/bin
 
 cd %binDir%
 php console package:git:pull

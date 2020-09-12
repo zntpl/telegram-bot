@@ -1,4 +1,4 @@
 #!/bin/sh
-cd ../../vendor/php7lab/dev/bin
+cd ../../vendor/zntool/dev/bin
 php console phar:pack:vendor
 #php -v

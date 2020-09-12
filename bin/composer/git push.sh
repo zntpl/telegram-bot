@@ -1,9 +1,9 @@
 #!/bin/sh
 cd ../../vendor
 
-cd php7lab/eloquent && git push
+cd zncore/db && git push
 cd ../../php7lab/bundle && git push
-cd ../../php7lab/dev && git push
+cd ../../zntool/dev && git push
 cd ../../php7lab/rest && git push
 cd ../../php7lab/sandbox && git push
 cd ../../php7lab/test && git push
