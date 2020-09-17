@@ -6,7 +6,7 @@ use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
 use Symfony\Component\Console\Application;
 use Psr\Container\ContainerInterface;
 use ZnCore\Base\Libs\Env\DotEnvHelper;
-use ZnCore\Base\Console\Helpers\CommandHelper;
+use ZnLib\Console\Symfony4\Helpers\CommandHelper;
 
 /** @var ContainerInterface $container */
 
