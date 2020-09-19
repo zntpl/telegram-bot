@@ -25,3 +25,5 @@
 === HTTP QUERY ===
 
 update_id=592564469&message%5Bmessage_id%5D=3886&message%5Bfrom%5D%5Bid%5D=377819118&message%5Bfrom%5D%5Bis_bot%5D=0&message%5Bfrom%5D%5Bfirst_name%5D=phpGuru&message%5Bfrom%5D%5Busername%5D=phpGuru&message%5Bfrom%5D%5Blanguage_code%5D=ru&message%5Bchat%5D%5Bid%5D=377819118&message%5Bchat%5D%5Bfirst_name%5D=phpGuru&message%5Bchat%5D%5Busername%5D=phpGuru&message%5Bchat%5D%5Btype%5D=private&message%5Bdate%5D=1597583291&message%5Btext%5D=zzz
+
+http://telegram-client.tpl/bot.php?token=773713470:AAHTBIYMDvcreuZBxKpvAQWVLOQOG24F-mE&update_id=592564469&message[message_id]=3886&message[from][id]=377819118&message[from][is_bot]=0&message[from][first_name]=phpGuru&message[from][username]=phpGuru&message[from][language_code]=ru&message[chat][id]=377819118&message[chat][first_name]=phpGuru&message[chat][username]=phpGuru&message[chat][type]=private&message[date]=1597583291&message[text]=zzz

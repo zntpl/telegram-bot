@@ -4,8 +4,8 @@
 namespace App\Shop\Telegram\Controllers;
 
 
-use App\Core\Entities\RequestEntity;
-use ZnSandbox\Telegram\Interfaces\MatcherInterface;
+use ZnLib\Telegram\Domain\Entities\RequestEntity;
+use ZnLib\Telegram\Domain\Interfaces\MatcherInterface;
 
 class DefaultController
 {

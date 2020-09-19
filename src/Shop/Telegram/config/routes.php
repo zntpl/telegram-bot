@@ -1,7 +1,7 @@
 <?php
 
-use ZnSandbox\Telegram\Actions\SendMessageAction;
-use ZnSandbox\Telegram\Matchers\EqualOfPatternsMatcher;
+use ZnLib\Telegram\Domain\Actions\SendMessageAction;
+use ZnLib\Telegram\Domain\Matchers\EqualOfPatternsMatcher;
 
 return [
     [

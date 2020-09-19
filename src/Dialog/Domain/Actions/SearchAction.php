@@ -2,10 +2,10 @@
 
 namespace App\Dialog\Domain\Actions;
 
-use App\Core\Entities\RequestEntity;
-use ZnSandbox\Telegram\Base\BaseAction;
-use ZnSandbox\Telegram\Entities\MessageEntity;
-use ZnSandbox\Telegram\Helpers\MatchHelper;
+use ZnLib\Telegram\Domain\Entities\RequestEntity;
+use ZnLib\Telegram\Domain\Base\BaseAction;
+use ZnLib\Telegram\Domain\Entities\MessageEntity;
+use ZnLib\Telegram\Domain\Helpers\MatchHelper;
 use danog\MadelineProto\APIFactory;
 use ZnCore\Base\Helpers\StringHelper;
 

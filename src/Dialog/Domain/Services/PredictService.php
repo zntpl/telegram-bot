@@ -2,9 +2,9 @@
 
 namespace App\Dialog\Domain\Services;
 
-use ZnSandbox\Telegram\Libs\SoundexRuEn;
+use ZnLib\Telegram\Domain\Libs\SoundexRuEn;
 use App\Dialog\Domain\Entities\AnswerEntity;
-use ZnSandbox\Telegram\Helpers\MatchHelper;
+use ZnLib\Telegram\Domain\Helpers\MatchHelper;
 use App\Dialog\Domain\Helpers\WordHelper;
 use App\Dialog\Domain\Libs\Parser;
 use Illuminate\Container\Container;

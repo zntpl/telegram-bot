@@ -2,7 +2,7 @@
 
 namespace App\Dialog\Domain\Services;
 
-use ZnSandbox\Telegram\Libs\SoundexRuEn;
+use ZnLib\Telegram\Domain\Libs\SoundexRuEn;
 use App\Dialog\Domain\Entities\TagEntity;
 use App\Dialog\Domain\Interfaces\Repositories\TagRepositoryInterface;
 use App\Dialog\Domain\Interfaces\Services\TagServiceInterface;

@@ -3,16 +3,16 @@
 namespace App\Dialog\Domain\Handlers;
 
 use App\Dialog\Domain\Actions\DataBaseAction;
-use ZnSandbox\Telegram\Actions\EchoAction;
-use ZnSandbox\Telegram\Actions\GroupAction;
-use ZnSandbox\Telegram\Actions\HelpAction;
-use ZnSandbox\Telegram\Actions\SendMessageAction;
-use ZnSandbox\Telegram\Actions\ShutdownServerAction;
-use ZnSandbox\Telegram\Handlers\BaseInputMessageEventHandler;
-use ZnSandbox\Telegram\Matchers\AnyMatcher;
-use ZnSandbox\Telegram\Matchers\EqualOfPatternsMatcher;
-use ZnSandbox\Telegram\Matchers\GroupAndMatcher;
-use ZnSandbox\Telegram\Matchers\IsAdminMatcher;
+use ZnLib\Telegram\Domain\Actions\EchoAction;
+use ZnLib\Telegram\Domain\Actions\GroupAction;
+use ZnLib\Telegram\Domain\Actions\HelpAction;
+use ZnLib\Telegram\Domain\Actions\SendMessageAction;
+use ZnLib\Telegram\Domain\Actions\ShutdownServerAction;
+use ZnLib\Telegram\Domain\Handlers\BaseInputMessageEventHandler;
+use ZnLib\Telegram\Domain\Matchers\AnyMatcher;
+use ZnLib\Telegram\Domain\Matchers\EqualOfPatternsMatcher;
+use ZnLib\Telegram\Domain\Matchers\GroupAndMatcher;
+use ZnLib\Telegram\Domain\Matchers\IsAdminMatcher;
 use App\Dialog\Domain\Actions\SearchAction;
 
 class DialogEventHandler extends BaseInputMessageEventHandler
@@ -37,7 +37,7 @@ class DialogEventHandler extends BaseInputMessageEventHandler
                     new EqualOfPatternsMatcher(['~']),
                 ]),
                 'action' => new GroupAction([
-                    new \ZnSandbox\Telegram\Actions\ConsoleCommandAction(),
+                    new \ZnLib\Telegram\Domain\Actions\ConsoleCommandAction(),
                 ]),
                 'help' => '~ - выполнить команду в консоли',
             ],

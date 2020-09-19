@@ -2,7 +2,7 @@
 
 namespace App\Dialog\Domain\Helpers;
 
-use ZnSandbox\Telegram\Helpers\MatchHelper;
+use ZnLib\Telegram\Domain\Helpers\MatchHelper;
 use App\Dialog\Domain\Libs\Parser;
 use ZnCore\Base\Helpers\StringHelper;
 

@@ -2,7 +2,7 @@
 
 namespace App\Dialog\Domain\Handlers;
 
-use ZnSandbox\Telegram\Handlers\BaseInputMessageEventHandler2;
+use ZnLib\Telegram\Domain\Handlers\BaseInputMessageEventHandler2;
 
 class DialogEventHandler2 extends BaseInputMessageEventHandler2
 {

@@ -2,7 +2,7 @@
 
 namespace App\Dialog\Domain\Libs;
 
-use ZnSandbox\Telegram\Helpers\MatchHelper;
+use ZnLib\Telegram\Domain\Helpers\MatchHelper;
 use ZnCore\Base\Helpers\StringHelper;
 
 class Parser {

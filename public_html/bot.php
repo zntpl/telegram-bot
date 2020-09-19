@@ -4,8 +4,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 use App\Bootstrap\Kernel;
-use App\Core\Controllers\BotController;
-use App\Core\Services\ResponseService;
+use ZnLib\Telegram\Api\Controllers\BotController;
+use ZnLib\Telegram\Domain\Services\ResponseService;
 use ZnCore\Base\Libs\Env\DotEnvHelper;
 use Psr\Container\ContainerInterface;
 

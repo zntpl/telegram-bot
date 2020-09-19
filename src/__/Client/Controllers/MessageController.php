@@ -4,7 +4,7 @@
 namespace App\Client\Controllers;
 
 
-use App\Core\Interfaces\Repositories\ResponseRepositoryInterface;
+use ZnLib\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
 
 class MessageController
 {

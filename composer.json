@@ -3,19 +3,18 @@
     "minimum-stability":"dev",
     "require": {
         "php": "^7.2",
+        "ext-json": "*",
         "guzzlehttp/guzzle": "6.*",
-
-        "znsandbox/sandbox": "dev-master",
+        "symfony/cache": "^5.2@dev",
+        "symfony/validator": "4.*",
+        "workerman/workerman": "^4.0",
         "zncore/db": "dev-master",
         "zncore/domain": "dev-master",
         "znlib/console": "dev-master",
         "znlib/init": "dev-master",
         "znlib/rest": "dev-master",
-
-        "symfony/cache": "^5.2@dev",
-        "symfony/validator": "4.*",
-        "workerman/workerman": "^4.0",
-        "ext-json": "*"
+        "znlib/telegram": "dev-master",
+        "znsandbox/sandbox": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "6.*",

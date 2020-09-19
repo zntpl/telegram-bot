@@ -2,7 +2,7 @@
 
 namespace App\Dialog\Domain\Entities;
 
-use ZnSandbox\Telegram\Libs\SoundexRuEn;
+use ZnLib\Telegram\Domain\Libs\SoundexRuEn;
 use Symfony\Component\Validator\Constraints as Assert;
 use ZnCore\Domain\Interfaces\Entity\ValidateEntityInterface;
 use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;

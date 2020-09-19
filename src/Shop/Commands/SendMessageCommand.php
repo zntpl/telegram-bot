@@ -2,8 +2,8 @@
 
 namespace App\Shop\Commands;
 
-use App\Core\Services\BotService;
-use App\Core\Services\ResponseService;
+use ZnLib\Telegram\Domain\Services\BotService;
+use ZnLib\Telegram\Domain\Services\ResponseService;
 use Illuminate\Container\Container;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

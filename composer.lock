@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "53296fa827442079c61489ac1a8ab0c8",
+    "content-hash": "9343a8a72379f18a743cd95d073be063",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -2782,6 +2782,39 @@
             "time": "2020-09-16T15:44:31+00:00"
         },
         {
+            "name": "znlib/telegram",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/znlib/telegram.git",
+                "reference": "fa7a8c500bc450a8430354cd811f5e851c46f57a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/znlib/telegram/zipball/fa7a8c500bc450a8430354cd811f5e851c46f57a",
+                "reference": "fa7a8c500bc450a8430354cd811f5e851c46f57a",
+                "shasum": ""
+            },
+            "type": "extension",
+            "autoload": {
+                "psr-4": {
+                    "ZnLib\\Telegram\\": "src",
+                    "ZnLib\\Telegram\\Tests\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yamshikov Vitaliy",
+                    "email": "theyamshikov@yandex.ru"
+                }
+            ],
+            "time": "2020-09-19T15:15:22+00:00"
+        },
+        {
             "name": "znsandbox/sandbox",
             "version": "dev-master",
             "source": {
@@ -4516,13 +4549,14 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "znsandbox/sandbox": 20,
+        "symfony/cache": 20,
         "zncore/db": 20,
         "zncore/domain": 20,
         "znlib/console": 20,
         "znlib/init": 20,
         "znlib/rest": 20,
-        "symfony/cache": 20,
+        "znlib/telegram": 20,
+        "znsandbox/sandbox": 20,
         "zntool/dev": 20
     },
     "prefer-stable": false,
