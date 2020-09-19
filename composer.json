@@ -8,6 +8,9 @@
         "znsandbox/sandbox": "dev-master",
         "zncore/db": "dev-master",
         "zncore/domain": "dev-master",
+        "znlib/console": "dev-master",
+        "znlib/init": "dev-master",
+        "znlib/rest": "dev-master",
 
         "symfony/cache": "^5.2@dev",
         "symfony/validator": "4.*",
