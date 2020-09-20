@@ -1,9 +1,8 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
 use App\Bootstrap\Kernel;
+use Illuminate\Container\Container;
 use ZnLib\Telegram\Api\Controllers\BotController;
 use ZnLib\Telegram\Domain\Services\ResponseService;
 use ZnCore\Base\Libs\Env\DotEnvHelper;
@@ -14,10 +13,15 @@ use Psr\Container\ContainerInterface;
 require_once __DIR__ . '/../src/Bootstrap/autoload.php';
 $rootPath = realpath(__DIR__ . '/..');
 DotEnvHelper::init($rootPath);
+$container = Container::getInstance();
+
+$kernel = new Kernel;
+$kernel->init();
+
+include __DIR__ . '/../config/container.php';
 include __DIR__ . '/../config/bootstrap.php';
 
 $botConfig = include __DIR__ . '/../config/bot.php';
-$container = Kernel::container();
 
 /** @var BotController $botController */
 $botController = $container->get(BotController::class);

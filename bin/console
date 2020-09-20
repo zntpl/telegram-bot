@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
 
+use App\Bootstrap\Kernel;
 use Illuminate\Container\Container;
 use ZnCore\Base\Legacy\Yii\Helpers\FileHelper;
 use Symfony\Component\Console\Application;
@@ -15,6 +16,10 @@ $rootPath = realpath(__DIR__ . '/..');
 DotEnvHelper::init($rootPath);
 $container = Container::getInstance();
 
+$kernel = new Kernel;
+$kernel->init();
+
+include __DIR__ . '/../config/container.php';
 include __DIR__ . '/../config/bootstrap.php';
 
 $consoleConfig = include __DIR__ . '/../config/console.php';

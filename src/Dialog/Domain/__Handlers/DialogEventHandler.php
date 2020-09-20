@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Dialog\Domain\Handlers;
+namespace App\Dialog\Domain\__Handlers;
 
 use App\Dialog\Domain\Actions\DataBaseAction;
 use ZnLib\Telegram\Domain\Actions\EchoAction;

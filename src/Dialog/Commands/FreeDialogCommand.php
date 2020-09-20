@@ -2,7 +2,7 @@
 
 namespace App\Dialog\Commands;
 
-use App\Dialog\Domain\Handlers\DialogEventHandler;
+use App\Dialog\Domain\__Handlers\DialogEventHandler;
 use danog\MadelineProto\API;
 use Illuminate\Container\Container;
 use Symfony\Component\Console\Command\Command;
