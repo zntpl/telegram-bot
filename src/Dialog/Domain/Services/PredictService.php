@@ -53,6 +53,7 @@ class PredictService
     {
         $container = Container::getInstance();
 
+        /** @var TagService $tagService */
         $tagService = $container->get(TagService::class);
         $words = $tagService->normalizeWorlds($words);
 

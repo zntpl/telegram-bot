@@ -1,9 +1,11 @@
 <?php
 
+use App\Dialog\Domain\Actions\DataBaseAction;
 use ZnLib\Telegram\Domain\Actions\EchoAction;
 use ZnLib\Telegram\Domain\Actions\GroupAction;
 use ZnLib\Telegram\Domain\Actions\SendButtonAction;
 use ZnLib\Telegram\Domain\Actions\SendMessageAction;
+use ZnLib\Telegram\Domain\Matchers\AnyMatcher;
 use ZnLib\Telegram\Domain\Matchers\EqualOfPatternsMatcher;
 use ZnLib\Telegram\Domain\Matchers\GroupAndMatcher;
 
@@ -19,8 +21,6 @@ $simpleQuestions = [
 ];
 
 $routes = [
-
-
     [
         'matcher' => new EqualOfPatternsMatcher(['btn']),
         'action' => new SendButtonAction('111', [
@@ -88,6 +88,19 @@ $routes = [
         'help' => 'help - вызов данной справки',
     ],
 
+    [
+        'matcher' => new AnyMatcher,
+        'action' => new DataBaseAction(),
+        'help' => '
+Ифнобот реагирует, если понимает фразу.
+Он может ответить на распространенные вопросы, на пример:
+привет!
+сколько тебе лет?
+как дела?
+Может понять, даже если вы написали слова с ошибками.
+Перестановка слов местами мало на что влияет.',
+    ],
+
     /*[
         'matcher' => new AnyMatcher,
         'action' => new SendMessageAction('...'),
@@ -123,18 +136,7 @@ $routes = [
         'action' => new SearchAction($simpleQuestions),
         'help' => 'Отвечает на вопросы: ' . implode('? ', $simpleQuestions) . '?',
     ],
-    [
-        'matcher' => new AnyMatcher,
-        'action' => new DataBaseAction(),
-        'help' => '
-Ифнобот реагирует, если понимает фразу.
-Он может ответить на распространенные вопросы, на пример:
-привет!
-сколько тебе лет?
-как дела?
-Может понять, даже если вы написали слова с ошибками.
-Перестановка слов местами мало на что влияет.',
-    ],*/
+    */
 ];
 
 $routes = array_merge($routes, include(__DIR__ . '/../src/Shop/Telegram/config/routes.php'));

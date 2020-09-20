@@ -94,15 +94,18 @@ class TagService extends BaseCrudService implements TagServiceInterface
     public function normalizeWorlds(array $words): array
     {
         $soundex = new SoundexRuEn;
-        foreach ($words as &$word) {
+        $newWords = [];
+        foreach ($words as $word) {
             $query = new Query;
             $query->whereNew(new Where('soundex', $soundex->encodeSoundex($word), OperatorEnum::EQUAL, 'or'));
             $query->whereNew(new Where('metaphone', $soundex->encodeMetaphone($word), OperatorEnum::EQUAL, 'or'));
             /** @var TagEntity[] | Collection $tagCollection */
             $tagCollection = parent::all($query);
-            $word = $this->filterTagCollection($word, $tagCollection);
+            if($tagCollection->count() > 0) {
+                $newWords[] = $this->filterTagCollection($word, $tagCollection);
+            }
         }
-        return $words;
+        return $newWords;
     }
 
     public function allByWorlds(array $words, Query $query = null): Collection
