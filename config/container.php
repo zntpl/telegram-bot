@@ -29,13 +29,11 @@ if ($_ENV['APP_ENV'] == 'test') {
     $container->bind(ResponseRepositoryInterface::class, \ZnLib\Telegram\Domain\Repositories\Telegram\ResponseRepository::class);
 }
 
-/*$container->bind(Application::class, Application::class, true);
-$this->bindApi($container);*/
-
-$container->bind(\App\Dialog\Domain\Interfaces\Repositories\TagRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\TagRepository::class);
-$container->bind(\App\Dialog\Domain\Interfaces\Repositories\AnswerRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\AnswerRepository::class);
-$container->bind(\App\Dialog\Domain\Interfaces\Repositories\AnswerTagRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\AnswerTagRepository::class);
-$container->bind(\App\Dialog\Domain\Interfaces\Repositories\AnswerOptionRepositoryInterface::class, \App\Dialog\Domain\Repositories\Eloquent\AnswerOptionRepository::class);
+$definitions = [];
+$definitions = array_merge($definitions, require(__DIR__ . '/../vendor/znbundle/talkbox/src/Domain/config/container.php'));
+foreach ($definitions as $abstract => $concrete) {
+    $container->bind($abstract, $concrete);
+}
 
 $container->bind(FilesystemAdapter::class, function () {
     return new FilesystemAdapter('app', TimeEnum::SECOND_PER_HOUR, $_ENV['CACHE_DIRECTORY']);

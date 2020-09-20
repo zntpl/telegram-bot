@@ -1,6 +1,6 @@
 <?php
 
-use App\Dialog\Domain\Actions\DataBaseAction;
+use ZnBundle\TalkBox\Domain\Actions\DataBaseAction;
 use ZnLib\Telegram\Domain\Actions\EchoAction;
 use ZnLib\Telegram\Domain\Actions\GroupAction;
 use ZnLib\Telegram\Domain\Actions\SendButtonAction;
@@ -100,12 +100,6 @@ $routes = [
 Может понять, даже если вы написали слова с ошибками.
 Перестановка слов местами мало на что влияет.',
     ],
-
-    /*[
-        'matcher' => new AnyMatcher,
-        'action' => new SendMessageAction('...'),
-        'help' => '',
-    ],*/
 
     /*[
         'matcher' => new GroupAndMatcher([

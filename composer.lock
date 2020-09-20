@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9343a8a72379f18a743cd95d073be063",
+    "content-hash": "824a9a6dfe0a02b696730afce23ed2a5",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -2563,6 +2563,42 @@
             "time": "2020-09-15T09:22:45+00:00"
         },
         {
+            "name": "znbundle/talkbox",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/znbundle/talkbox.git",
+                "reference": "e9c55102d60bab9d735d259e3fd469a6ac6a19a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/znbundle/talkbox/zipball/e9c55102d60bab9d735d259e3fd469a6ac6a19a2",
+                "reference": "e9c55102d60bab9d735d259e3fd469a6ac6a19a2",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/serializer": "4.*|5.*"
+            },
+            "type": "extension",
+            "autoload": {
+                "psr-4": {
+                    "ZnBundle\\TalkBox\\": "src",
+                    "ZnBundle\\TalkBox\\Tests\\": "tests"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yamshikov Vitaliy",
+                    "email": "theyamshikov@yandex.ru"
+                }
+            ],
+            "time": "2020-09-20T09:48:06+00:00"
+        },
+        {
             "name": "zncore/base",
             "version": "v0.0.5",
             "source": {
@@ -4550,6 +4586,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/cache": 20,
+        "znbundle/talkbox": 20,
         "zncore/db": 20,
         "zncore/domain": 20,
         "znlib/console": 20,

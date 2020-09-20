@@ -8,6 +8,7 @@
         "symfony/cache": "^5.2@dev",
         "symfony/validator": "4.*",
         "workerman/workerman": "^4.0",
+        "znbundle/talkbox": "dev-master",
         "zncore/db": "dev-master",
         "zncore/domain": "dev-master",
         "znlib/console": "dev-master",

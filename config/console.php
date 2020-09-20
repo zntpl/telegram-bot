@@ -2,7 +2,7 @@
 
 return [
     'namespaceList' => [
-        'App\Dialog\Commands',
+        'ZnBundle\TalkBox\Commands',
         'App\Shop\Commands',
         'MyBundles\Top\Commands',
     ]
