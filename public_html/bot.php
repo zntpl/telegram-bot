@@ -21,8 +21,6 @@ $kernel->init();
 include __DIR__ . '/../config/container.php';
 include __DIR__ . '/../config/bootstrap.php';
 
-$botConfig = include __DIR__ . '/../config/bot.php';
-
 /** @var BotController $botController */
 $botController = $container->get(BotController::class);
 

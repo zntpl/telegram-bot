@@ -2,13 +2,13 @@
 
 namespace App\Shop\Commands;
 
-use ZnLib\Telegram\Domain\Services\BotService;
-use ZnLib\Telegram\Domain\Services\ResponseService;
 use Illuminate\Container\Container;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Command\Command;
+use ZnLib\Telegram\Domain\Services\BotService;
+use ZnLib\Telegram\Domain\Services\ResponseService;
 
 class SendMessageCommand extends Command
 {
@@ -30,8 +30,8 @@ class SendMessageCommand extends Command
         $responseService = $container->get(ResponseService::class);
         /** @var BotService $botService */
         $botService = $container->get(BotService::class);
-        $botConfig = include __DIR__ . '/../../../config/bot.php';
-        $botService->authByToken($botConfig['token']);
+        $config = include __DIR__ . '/../../../config/main.php';
+        $botService->authByToken($config['telegram']['bot']['token']);
         $responseService->sendMessage($input->getArgument('chatId'), $input->getArgument('text'));
         return Command::SUCCESS;
     }
