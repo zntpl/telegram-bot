@@ -1,6 +1,7 @@
 <?php
 
-use ZnBundle\TalkBox\Domain\Actions\DataBaseAction;
+use ZnBundle\TalkBox\Telegram\Actions\DataBaseAction;
+use ZnBundle\TalkBox\Telegram\Actions\SearchAction;
 use ZnLib\Telegram\Domain\Actions\EchoAction;
 use ZnLib\Telegram\Domain\Actions\GroupAction;
 use ZnLib\Telegram\Domain\Actions\SendButtonAction;
@@ -89,6 +90,14 @@ $routes = [
     ],
 
     [
+        'matcher' => new GroupAndMatcher([
+            new EqualOfPatternsMatcher($simpleQuestions),
+        ]),
+        'action' => new SearchAction($simpleQuestions),
+        'help' => 'Отвечает на вопросы: ' . implode('? ', $simpleQuestions) . '?',
+    ],
+
+    [
         'matcher' => new AnyMatcher,
         'action' => new DataBaseAction(),
         'help' => '
@@ -123,13 +132,7 @@ $routes = [
         ]),
         'help' => 'sleep - погрузить сервер в сон',
     ],
-    [
-        'matcher' => new GroupAndMatcher([
-            new EqualOfPatternsMatcher($simpleQuestions),
-        ]),
-        'action' => new SearchAction($simpleQuestions),
-        'help' => 'Отвечает на вопросы: ' . implode('? ', $simpleQuestions) . '?',
-    ],
+
     */
 ];
 

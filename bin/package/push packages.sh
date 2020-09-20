@@ -10,6 +10,7 @@ cd /home/vitaliy/common/var/www/tpl/telegram-bot/vendor/znbundle/user && git add
 cd /home/vitaliy/common/var/www/tpl/telegram-bot/vendor/znbundle/dashboard && git add . && git commit -m upd && git push
 cd /home/vitaliy/common/var/www/tpl/telegram-bot/vendor/znbundle/language && git add . && git commit -m upd && git push
 cd /home/vitaliy/common/var/www/tpl/telegram-bot/vendor/znbundle/rbac && git add . && git commit -m upd && git push
+cd /home/vitaliy/common/var/www/tpl/telegram-bot/vendor/znbundle/talkbox && git add . && git commit -m upd && git push
 
 cd /home/vitaliy/common/var/www/tpl/telegram-bot/vendor/zncore/base && git add . && git commit -m upd && git push
 cd /home/vitaliy/common/var/www/tpl/telegram-bot/vendor/zncore/db && git add . && git commit -m upd && git push
