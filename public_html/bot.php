@@ -5,14 +5,14 @@ use App\Bootstrap\Kernel;
 use Illuminate\Container\Container;
 use ZnLib\Telegram\Api\Controllers\BotController;
 use ZnLib\Telegram\Domain\Services\ResponseService;
-use ZnCore\Base\Libs\Env\DotEnvHelper;
+use ZnCore\Base\Libs\DotEnv\DotEnv;
 use Psr\Container\ContainerInterface;
 
 /** @var ContainerInterface $container */
 
 require_once __DIR__ . '/../src/Bootstrap/autoload.php';
 $rootPath = realpath(__DIR__ . '/..');
-DotEnvHelper::init($rootPath);
+DotEnv::init($rootPath);
 $container = Container::getInstance();
 
 $kernel = new Kernel;
