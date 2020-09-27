@@ -9,12 +9,14 @@
         "symfony/validator": "4.*",
         "workerman/workerman": "^4.0",
         "znbundle/talkbox": "dev-master",
-        "zncore/db": "dev-master",
         "zncore/domain": "dev-master",
         "znlib/console": "dev-master",
         "znlib/init": "dev-master",
         "znlib/rest": "dev-master",
         "znlib/telegram": "dev-master",
+        "znlib/db": "dev-master",
+        "znlib/migration": "dev-master",
+        "znlib/fixture": "dev-master",
         "znsandbox/sandbox": "dev-master"
     },
     "require-dev": {
