@@ -8,13 +8,19 @@ use Symfony\Component\Console\Application;
 use Psr\Container\ContainerInterface;
 use ZnCore\Base\Libs\DotEnv\DotEnv;
 use ZnLib\Console\Symfony4\Helpers\CommandHelper;
-
-/** @var ContainerInterface $container */
+use ZnLib\Db\Factories\ManagerFactory;
+use ZnLib\Db\Capsule\Manager;
 
 require_once __DIR__ . '/../src/Bootstrap/autoload.php';
 $rootPath = realpath(__DIR__ . '/..');
 DotEnv::init($rootPath);
+
 $container = Container::getInstance();
+$container->bind(Application::class, Application::class, true);
+$container->bind(Manager::class, function () {
+    return ManagerFactory::createManagerFromEnv();
+}, true);
+$application = $container->get(Application::class);
 
 $kernel = new Kernel;
 $kernel->init();
@@ -25,5 +31,4 @@ include __DIR__ . '/../config/bootstrap.php';
 $consoleConfig = include __DIR__ . '/../config/console.php';
 CommandHelper::registerFromNamespaceList($consoleConfig['namespaceList'], $container);
 
-$application = $container->get(Application::class);
 $application->run();

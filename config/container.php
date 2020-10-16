@@ -10,7 +10,10 @@ use ZnLib\Telegram\Domain\Services\RequestService;
 use ZnLib\Telegram\Domain\Services\ResponseService;
 use ZnLib\Telegram\Domain\Services\RouteService;
 
-$container->bind(Application::class, Application::class, true);
+/**
+ * @var Application $application
+ * @var Container $container
+ */
 
 $container->bind(BotService::class, BotService::class, true);
 $container->bind(RequestService::class, RequestService::class, true);
