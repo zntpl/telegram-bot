@@ -3,6 +3,7 @@
 use Illuminate\Container\Container;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\Console\Application;
+use ZnBundle\TalkBox\Domain\Interfaces\Repositories\TagRepositoryInterface;
 use ZnCore\Base\Enums\Measure\TimeEnum;
 use ZnLib\Telegram\Domain\Interfaces\Repositories\ResponseRepositoryInterface;
 use ZnLib\Telegram\Domain\Services\BotService;
@@ -16,6 +17,7 @@ use ZnLib\Telegram\Domain\Services\RouteService;
  */
 
 $container->bind(BotService::class, BotService::class, true);
+//$container->bind(TagRepositoryInterface::class, \ZnBundle\TalkBox\Domain\Repositories\Eloquent\TagRepository::class, true);
 $container->bind(RequestService::class, RequestService::class, true);
 $container->bind(ResponseService::class, ResponseService::class, true);
 $container->bind(RouteService::class, function (Container $container) {

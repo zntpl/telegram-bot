@@ -29,6 +29,7 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
+            "ZnLib\\Db\\": "vendor/znlib/db/src/",
             "MyBundles\\Top\\": "vendor/my-bundles/top/src/"
         }
     },
