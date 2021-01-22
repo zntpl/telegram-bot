@@ -5,19 +5,20 @@
         "php": "^7.2",
         "ext-json": "*",
         "guzzlehttp/guzzle": "6.*",
+        "monolog/monolog": "~1.22 || ~2.0",
         "symfony/cache": "^5.2@dev",
         "symfony/validator": "4.*",
         "workerman/workerman": "^4.0",
+        "znbundle/log": "dev-main",
         "znbundle/talkbox": "dev-master",
-        "znbundle/log": "dev-master",
         "zncore/domain": "dev-master",
         "znlib/console": "dev-master",
+        "znlib/db": "dev-master",
+        "znlib/fixture": "dev-master",
         "znlib/init": "dev-master",
+        "znlib/migration": "dev-master",
         "znlib/rest": "dev-master",
         "znlib/telegram": "dev-master",
-        "znlib/db": "dev-master",
-        "znlib/migration": "dev-master",
-        "znlib/fixture": "dev-master",
         "znsandbox/sandbox": "dev-master"
     },
     "require-dev": {
@@ -33,8 +34,6 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "ZnLib\\Db\\": "vendor/znlib/db/src/",
-            "ZnBundle\\Log\\": "vendor/znbundle/log/src/",
             "MyBundles\\Top\\": "vendor/my-bundles/top/src/"
         }
     },

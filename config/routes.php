@@ -97,7 +97,7 @@ $routes = [
         'help' => 'Отвечает на вопросы: ' . implode('? ', $simpleQuestions) . '?',
     ],
 
-    [
+    /*[
         'matcher' => new AnyMatcher,
         'action' => new DataBaseAction(),
         'help' => '
@@ -108,7 +108,7 @@ $routes = [
 как дела?
 Может понять, даже если вы написали слова с ошибками.
 Перестановка слов местами мало на что влияет.',
-    ],
+    ],*/
 
     /*[
         'matcher' => new GroupAndMatcher([
