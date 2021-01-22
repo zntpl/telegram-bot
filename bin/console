@@ -12,6 +12,7 @@ $container = Container::getInstance();
 $configurator = new ConsoleApplicationConfigurator($container);
 $configurator->registerContainerConfig(__DIR__ . '/../config/containerNew.php');
 $configurator->registerContainerConfig(__DIR__ . '/../vendor/znbundle/talkbox/src/Domain/config/container.php');
+$configurator->registerContainerConfig(__DIR__ . '/../vendor/znbundle/log/src/Domain/config/container.php');
 $configurator->registerBundles([
 //    new \ZnLib\Fixture\Bundle(['container', 'console']),
 //    new \ZnLib\Db\Bundle(['container', 'console']),
