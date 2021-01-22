@@ -6,9 +6,11 @@ use ZnLib\Telegram\Domain\Actions\EchoAction;
 use ZnLib\Telegram\Domain\Actions\GroupAction;
 use ZnLib\Telegram\Domain\Actions\SendButtonAction;
 use ZnLib\Telegram\Domain\Actions\SendMessageAction;
+use ZnLib\Telegram\Domain\Actions\ShutdownServerAction;
 use ZnLib\Telegram\Domain\Matchers\AnyMatcher;
 use ZnLib\Telegram\Domain\Matchers\EqualOfPatternsMatcher;
 use ZnLib\Telegram\Domain\Matchers\GroupAndMatcher;
+use ZnLib\Telegram\Domain\Matchers\IsAdminMatcher;
 
 $simpleQuestions = [
     'что такое',
@@ -97,6 +99,31 @@ $routes = [
         'help' => 'Отвечает на вопросы: ' . implode('? ', $simpleQuestions) . '?',
     ],
 
+
+    /*[
+        'matcher' => new GroupAndMatcher([
+            new IsAdminMatcher,
+            new EqualOfPatternsMatcher(['sleep']),
+        ]),
+        'action' => new GroupAction([
+            new SendMessageAction('Buy! 👋'),
+            //new ShutdownHandlerAction($apiFactory, $this),
+            new ShutdownServerAction($this),
+        ]),
+        'help' => 'sleep - погрузить сервер в сон',
+    ],
+    [
+        'matcher' => new GroupAndMatcher([
+            new IsAdminMatcher,
+            new EqualOfPatternsMatcher(['~']),
+        ]),
+        'action' => new GroupAction([
+            new \ZnLib\Telegram\Domain\Actions\ConsoleCommandAction(),
+        ]),
+        'help' => '~ - выполнить команду в консоли',
+    ],*/
+
+
     /*[
         'matcher' => new AnyMatcher,
         'action' => new DataBaseAction(),
@@ -110,30 +137,6 @@ $routes = [
 Перестановка слов местами мало на что влияет.',
     ],*/
 
-    /*[
-        'matcher' => new GroupAndMatcher([
-            new IsAdminMatcher,
-            new EqualOfPatternsMatcher(['~']),
-        ]),
-        'action' => new GroupAction([
-            new \ZnLib\Telegram\Domain\Actions\ConsoleCommandAction(),
-        ]),
-        'help' => '~ - выполнить команду в консоли',
-    ],
-    [
-        'matcher' => new GroupAndMatcher([
-            new IsAdminMatcher,
-            new EqualOfPatternsMatcher(['sleep']),
-        ]),
-        'action' => new GroupAction([
-            new SendMessageAction('Buy! 👋'),
-            //new ShutdownHandlerAction($apiFactory, $this),
-            new ShutdownServerAction($this),
-        ]),
-        'help' => 'sleep - погрузить сервер в сон',
-    ],
-
-    */
 ];
 
 $routes = array_merge($routes, include(__DIR__ . '/../src/Shop/Telegram/config/routes.php'));
