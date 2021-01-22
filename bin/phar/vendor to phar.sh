@@ -1,4 +1,3 @@
 #!/bin/sh
-cd ../../vendor/zntool/dev/bin
+cd ../../vendor/zntool/phar/bin
 php console phar:pack:vendor
-#php -v

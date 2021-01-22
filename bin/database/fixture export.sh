@@ -1,3 +1,3 @@
 #!/bin/sh
-cd ../../vendor/zncore/db/bin
+cd ..
 php console db:fixture:export

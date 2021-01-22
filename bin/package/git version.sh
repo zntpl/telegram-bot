@@ -1,3 +1,3 @@
 #!/bin/sh
-cd ../../vendor/zntool/dev/bin
+cd ..
 php console package:git:version
