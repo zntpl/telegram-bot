@@ -11,8 +11,8 @@ require __DIR__ . '/../vendor/autoload.php';
 $container = Container::getInstance();
 $configurator = new ConsoleApplicationConfigurator($container);
 $configurator->registerContainerConfig(__DIR__ . '/../vendor/znbundle/log/src/Domain/config/container.php');
-$configurator->registerContainerConfig(__DIR__ . '/../config/containerNew.php');
 $configurator->registerContainerConfig(__DIR__ . '/../vendor/znbundle/talkbox/src/Domain/config/container.php');
+$configurator->registerContainerConfig(__DIR__ . '/../config/containerNew.php');
 $configurator->registerBundles([
 //    new \ZnLib\Fixture\Bundle(['container', 'console']),
 //    new \ZnLib\Db\Bundle(['container', 'console']),
@@ -21,16 +21,13 @@ $configurator->registerBundles([
     new \ZnTool\Phar\Bundle(['container', 'console']),
 ]);
 
+$configurator->registerConsoleCommandNamespace('ZnBundle\TalkBox\Commands');
+$configurator->registerConsoleCommandNamespace('App\Shop\Commands');
+$configurator->registerConsoleCommandNamespace('MyBundles\Top\Commands');
+$configurator->registerConsoleCommandNamespace('ZnLib\Telegram\Symfony4\Commands');
 
 $application = $container->get(Application::class);
 $configurator->loadConfig($application);
-
-$configurator->registerConsoleCommand('ZnBundle\TalkBox\Commands', $application);
-$configurator->registerConsoleCommand('App\Shop\Commands', $application);
-$configurator->registerConsoleCommand('MyBundles\Top\Commands', $application);
-$configurator->registerConsoleCommand('ZnLib\Telegram\Symfony4\Commands', $application);
-
-
 $application->run();
 
 
