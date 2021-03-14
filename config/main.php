@@ -4,7 +4,7 @@ return [
     'telegram' => [
         'bot' => [
             'hookUrl' => 'https://tlgbot12.000webhostapp.com',
-            'token' => '773713470:AAHTBIYMDvcreuZBxKpvAQWVLOQOG24F-mE',
+            'token' => $_ENV['TELEGRAM_BOT_TOKEN'],
             'timeout' => 30,
         ],
     ],
