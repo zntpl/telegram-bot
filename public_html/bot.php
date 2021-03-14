@@ -23,7 +23,7 @@ ComposerHelper::register('App', __DIR__ . '/../src');
 $container = Container::getInstance();
 $kernel = new Kernel('telegram');
 $kernel->setContainer($container);
-$kernel->setLoader(new ContainerConfigLoader(__DIR__ . '/../config/extra/importContainer.php'));
+//$kernel->setLoader(new ContainerConfigLoader(__DIR__ . '/../config/extra/importContainer.php'));
 /*$kernel->setLoader(new RoutingConfigLoader([
     __DIR__ . '/../vendor/znlib/rpc/src/Symfony4/Web/config/routing.php'
 ]));*/

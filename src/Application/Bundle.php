@@ -20,10 +20,7 @@ class Bundle extends BaseBundle
     public function console(): array
     {
         return [
-            'ZnBundle\TalkBox\Commands',
-            'App\Shop\Commands',
-            'MyBundles\Top\Commands',
-            'ZnLib\Telegram\Symfony4\Commands',
+            //'MyBundles\Top\Commands',
         ];
     }
 
@@ -42,8 +39,8 @@ class Bundle extends BaseBundle
     public function container(): array
     {
         return [
-            __DIR__ . '/../../config/containerNew.php',
-            __DIR__ . '/../../vendor/znbundle/talkbox/src/Domain/config/container.php',
+            __DIR__ . '/../../config/container.php',
+            //__DIR__ . '/../../vendor/znbundle/talkbox/src/Domain/config/container.php',
 
             //$configurator->registerContainerConfig(__DIR__ . '/../vendor/znbundle/log/src/Domain/config/container.php');
 
