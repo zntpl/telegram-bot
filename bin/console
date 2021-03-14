@@ -1,34 +1,62 @@
 #!/usr/bin/env php
 <?php
 
-use Illuminate\Container\Container;
+use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Application;
-use ZnLib\Console\Symfony4\Libs\ConsoleApplicationConfigurator;
+use ZnLib\Console\Symfony4\Helpers\CommandHelper;
 
 require __DIR__ . '/../vendor/autoload.php';
 //require_once __DIR__ . '/../src/Kernel/autoload.php';
+require_once __DIR__ . '/bootstrap.php';
 
-$container = Container::getInstance();
+/**
+ * @var ContainerInterface $container
+ */
+
+$application = $container->get(Application::class);
+CommandHelper::registerFromNamespaceList($config['consoleCommands'], $container, $application);
+$application->run();
+
+
+/*use Illuminate\Container\Container;
+use Symfony\Component\Console\Application;
+use ZnCore\Base\Helpers\ComposerHelper;
+use ZnLib\Console\Symfony4\Helpers\CommandHelper;
+use ZnLib\Console\Symfony4\Libs\ConsoleApplicationConfigurator;
+use ZnTool\Dev\VarDumper\Facades\SymfonyDumperFacade;
+
+//require __DIR__ . '/../vendor/autoload.php';
+//require_once __DIR__ . '/../src/Bootstrap/autoload.php';
+//dd('sdfsdfsdfsd');
+
+require __DIR__ . '/../config/extra/consoleBootstrap.php';
+
+$application = new Application();
+CommandHelper::registerFromNamespaceList($config['consoleCommands'], $container, $application);
+//ComposerHelper::register('common', __DIR__ . '/../common');
+$application->run();*/
+
+
+
+/*$container = Container::getInstance();
 $configurator = new ConsoleApplicationConfigurator($container);
-$configurator->registerContainerConfig(__DIR__ . '/../vendor/znbundle/log/src/Domain/config/container.php');
+//$configurator->registerContainerConfig(__DIR__ . '/../vendor/znbundle/log/src/Domain/config/container.php');
 $configurator->registerContainerConfig(__DIR__ . '/../vendor/znbundle/talkbox/src/Domain/config/container.php');
 $configurator->registerContainerConfig(__DIR__ . '/../config/containerNew.php');
-$configurator->registerBundles([
-//    new \ZnLib\Fixture\Bundle(['container', 'console']),
-//    new \ZnLib\Db\Bundle(['container', 'console']),
-//    new \ZnLib\Migration\Bundle(['container', 'console']),
-    new \ZnTool\Package\Bundle(['container', 'console']),
-    new \ZnTool\Phar\Bundle(['container', 'console']),
-]);
+$configurator->registerBundles(include (__DIR__ . '/../config/extra/bundle.php'));
 
 $configurator->registerConsoleCommandNamespace('ZnBundle\TalkBox\Commands');
 $configurator->registerConsoleCommandNamespace('App\Shop\Commands');
 $configurator->registerConsoleCommandNamespace('MyBundles\Top\Commands');
 $configurator->registerConsoleCommandNamespace('ZnLib\Telegram\Symfony4\Commands');
 
+if(isset($_ENV['VAR_DUMPER_OUTPUT'])) {
+    SymfonyDumperFacade::dumpInConsole($_ENV['VAR_DUMPER_OUTPUT']);
+}
+
 $application = $container->get(Application::class);
-$configurator->loadConfig($application);
-$application->run();
+$configurator->loadConfig($application, __DIR__ . '/..');
+$application->run();*/
 
 
 

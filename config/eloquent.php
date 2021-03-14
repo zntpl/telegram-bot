@@ -7,6 +7,9 @@ return [
         ],
     ],
     'migrate' => [
+        'directory' => $_ENV['ELOQUENT_MIGRATIONS'] ?? [],
+    ],
+    /*'migrate' => [
         'directory' => [
             '/src/Modules/Partner/Domain/Migrations',
             '/src/Modules/Bridge/Domain/Migrations',
@@ -15,5 +18,5 @@ return [
             '/vendor/znbundle/queue/src/Domain/Migrations',
             '/vendor/znsandbox/sandbox/src/Log/Domain/Migrations',
         ],
-    ],
+    ],*/
 ];
