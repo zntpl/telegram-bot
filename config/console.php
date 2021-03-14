@@ -1,5 +1,7 @@
 <?php
 
+\ZnCore\Base\Helpers\DeprecateHelper::hardThrow();
+
 return [
     'namespaceList' => [
         'ZnBundle\TalkBox\Commands',

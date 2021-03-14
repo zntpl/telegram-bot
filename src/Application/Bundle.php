@@ -32,7 +32,6 @@ class Bundle extends BaseBundle
 //            '/vendor/znbundle/user/src/Domain/Migrations',
 //            '/vendor/znbundle/rbac/src/Domain/MigrationsFile',
 //            '/vendor/znbundle/queue/src/Domain/Migrations',
-//            '/vendor/znsandbox/sandbox/src/Log/Domain/Migrations',
         ];
     }
 

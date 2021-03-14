@@ -21,7 +21,8 @@ $bundles = [
 //    new \App\Modules\Message\Bundle(['container', 'console']),
 ];
 //$bundles = [];
-$bundles = ArrayHelper::merge($bundles, include __DIR__ . '/../config/extra/bundle.php');
+//$bundles = ArrayHelper::merge($bundles, include __DIR__ . '/../config/extra/bundle.php');
+$bundles = ArrayHelper::merge($bundles, include __DIR__ . '/../' . $_ENV['BUNDLES_CONFIG_FILE']);
 $bundleLoader = new BundleLoader($bundles, ['i18next', 'container', 'console', 'migration']);
 $kernel->setLoader($bundleLoader);
 $config = $kernel->loadAppConfig();
