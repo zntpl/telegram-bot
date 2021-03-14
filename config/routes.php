@@ -98,9 +98,7 @@ $routes = [
         'action' => new SearchAction($simpleQuestions),
         'help' => 'Отвечает на вопросы: ' . implode('? ', $simpleQuestions) . '?',
     ],
-
-
-    /*[
+    [
         'matcher' => new GroupAndMatcher([
             new IsAdminMatcher,
             new EqualOfPatternsMatcher(['sleep']),
@@ -108,10 +106,12 @@ $routes = [
         'action' => new GroupAction([
             new SendMessageAction('Buy! 👋'),
             //new ShutdownHandlerAction($apiFactory, $this),
-            new ShutdownServerAction($this),
+            new ShutdownServerAction(),
         ]),
         'help' => 'sleep - погрузить сервер в сон',
     ],
+
+    /*
     [
         'matcher' => new GroupAndMatcher([
             new IsAdminMatcher,
@@ -121,8 +121,8 @@ $routes = [
             new \ZnLib\Telegram\Domain\Actions\ConsoleCommandAction(),
         ]),
         'help' => '~ - выполнить команду в консоли',
-    ],*/
-
+    ],
+    */
 
     [
         'matcher' => new AnyMatcher,

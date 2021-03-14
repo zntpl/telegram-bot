@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+
+use ZnLib\Init\Libs\Init;
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$config = require __DIR__ . '/environments/index.php';
+$taskList = [
+    'copyFiles' => 'ZnLib\Init\Tasks\CopyFilesTask',
+    'setCookieValidationKey' => 'ZnLib\Init\Tasks\GenerateCookieValidationKeyTask',
+    'setWritable' => 'ZnLib\Init\Tasks\SetWritableTask',
+    'setExecutable' => 'ZnLib\Init\Tasks\SetExecutableTask',
+    'createSymlink' => 'ZnLib\Init\Tasks\CreateSymlinkTask',
+];
+$input = new ArgvInput;
+$output = new ConsoleOutput;
+$initLib = new Init($input, $output, $config, $taskList);
+$initLib->run();
