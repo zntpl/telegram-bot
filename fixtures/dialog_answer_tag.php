@@ -1,6 +1,8 @@
 <?php
 
 return [
+     'deps' => ['dialog_tag'],
+    'collection' => [
 	[
 		'id' => '1',
 		'tag_id' => '1',
@@ -208196,4 +208198,5 @@ return [
 		'tag_id' => '11347',
 		'answer_id' => '14418',
 	],
+]
 ];
