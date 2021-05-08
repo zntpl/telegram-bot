@@ -7,7 +7,7 @@ return [
     new \ZnLib\Telegram\Bundle(['i18next', 'container', 'console', 'migration']),
     new \ZnBundle\Log\Bundle(['i18next', 'container', 'console', 'migration']),
     new \ZnBundle\TalkBox\Bundle(['i18next', 'container', 'console', 'migration']),
-    new \App\Application\Bundle(['i18next', 'container', 'console', 'migration']),
+    new \App\Common\Bundle(['i18next', 'container', 'console', 'migration']),
 
     //    new \ZnLib\Fixture\Bundle(['container', 'console']),
 //    new \ZnLib\Db\Bundle(['container', 'console']),

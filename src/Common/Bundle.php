@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Application;
+namespace App\Common;
 
 use ZnCore\Base\Libs\App\Base\BaseBundle;
 
