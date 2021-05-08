@@ -13,7 +13,7 @@ use ZnLib\Telegram\Api\Controllers\BotController;
 use ZnLib\Telegram\Domain\Services\ResponseService;
 use ZnLib\Web\Symfony4\MicroApp\MicroApp;
 
-require_once __DIR__ . '/../src/Bootstrap/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 DotEnv::init(__DIR__ . '/..');
 CorsHelper::autoload();
