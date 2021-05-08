@@ -15,7 +15,6 @@ $bundles = [
     new \ZnTool\Phar\Bundle(['container', 'console']),
 ];
 $bundles = ArrayHelper::merge($bundles, include __DIR__ . '/../config/bundle.php');
-//$bundles = ArrayHelper::merge($bundles, include __DIR__ . '/../' . DotEnv::get('BUNDLES_CONFIG_FILE'));
 $kernel = KernelFactory::createConsoleKernel($bundles);
 $application = ApplicationFactory::createConsole($kernel);
 $application->run();
