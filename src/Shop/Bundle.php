@@ -13,4 +13,11 @@ class Bundle extends BaseBundle
             'App\Shop\Commands',
         ];
     }
+
+    public function telegramRoutes(): array
+    {
+        return [
+            __DIR__ . '/Telegram/config/routes.php',
+        ];
+    }
 }

@@ -23,7 +23,7 @@ $simpleQuestions = [
     'где мне найти',
 ];
 
-$routes = [
+return [
     [
         'matcher' => new EqualOfPatternsMatcher(['btn']),
         'action' => new SendButtonAction('111', [
@@ -138,7 +138,3 @@ $routes = [
     ],
 
 ];
-
-$routes = array_merge($routes, include(__DIR__ . '/../src/Shop/Telegram/config/routes.php'));
-
-return $routes;

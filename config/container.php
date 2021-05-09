@@ -12,16 +12,10 @@ use ZnLib\Telegram\Domain\Services\RouteService;
 return [
     'definitions' => [],
     'singletons' => [
-        BotService::class => BotService::class,
-        RequestService::class, RequestService::class,
-        ResponseService::class, ResponseService::class,
-        RouteService::class => function () {
-            /** @var RouteService $service */
-            $service = new RouteService;
-            $definitions = include(__DIR__ . '/../config/routes.php');
-            $service->setDefinitions($definitions);
-            return $service;
-        },
+        BotService::class,
+//        RequestService::class, RequestService::class,
+//        ResponseService::class, ResponseService::class,
+        RouteService::class,
         ResponseRepositoryInterface::class =>
             EnvHelper::isTest() ?
                 TestResponseRepository::class :

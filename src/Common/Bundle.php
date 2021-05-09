@@ -14,4 +14,11 @@ class Bundle extends BaseBundle
             __DIR__ . '/../../config/container.php',
         ];
     }
+
+    public function telegramRoutes(): array
+    {
+        return [
+            __DIR__ . '/../../config/routes.php',
+        ];
+    }
 }

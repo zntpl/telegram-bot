@@ -1,13 +1,13 @@
 <?php
 
 return [
-    new \ZnCore\Base\Bundle(['container', 'i18next', 'symfonyWeb', 'migration']),
-    new \ZnCore\Base\Libs\I18Next\Bundle(['container', 'i18next', 'symfonyWeb', 'migration']),
-    new \App\Shop\Bundle(['i18next', 'container', 'console', 'migration']),
-    new \ZnLib\Telegram\Bundle(['i18next', 'container', 'console', 'migration']),
-    new \ZnBundle\Log\Bundle(['i18next', 'container', 'console', 'migration']),
-    new \ZnBundle\TalkBox\Bundle(['i18next', 'container', 'console', 'migration']),
-    new \App\Common\Bundle(['i18next', 'container', 'console', 'migration']),
+    new \ZnCore\Base\Bundle(['all']),
+    new \ZnCore\Base\Libs\I18Next\Bundle(['all']),
+    new \App\Shop\Bundle(['all']),
+    new \ZnLib\Telegram\Bundle(['all']),
+    new \ZnBundle\Log\Bundle(['all']),
+    new \ZnBundle\TalkBox\Bundle(['all']),
+    new \App\Common\Bundle(['all']),
 
     //    new \ZnLib\Fixture\Bundle(['container', 'console']),
 //    new \ZnLib\Db\Bundle(['container', 'console']),
