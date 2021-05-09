@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-use App\Common\Factories\KernelFactory;
+use ZnLib\Telegram\Domain\Factories\KernelFactory;
 use ZnCore\Base\Legacy\Yii\Helpers\ArrayHelper;
 use ZnCore\Base\Libs\App\Factories\ApplicationFactory;
 

@@ -1,16 +1,16 @@
 <?php
 
-use ZnBundle\TalkBox\Telegram\Actions\DataBaseAction;
 use ZnBundle\TalkBox\Telegram\Actions\SearchAction;
 use ZnLib\Telegram\Domain\Actions\EchoAction;
 use ZnLib\Telegram\Domain\Actions\GroupAction;
 use ZnLib\Telegram\Domain\Actions\SendButtonAction;
 use ZnLib\Telegram\Domain\Actions\SendMessageAction;
 use ZnLib\Telegram\Domain\Actions\ShutdownServerAction;
-use ZnLib\Telegram\Domain\Matchers\AnyMatcher;
 use ZnLib\Telegram\Domain\Matchers\EqualOfPatternsMatcher;
 use ZnLib\Telegram\Domain\Matchers\GroupAndMatcher;
 use ZnLib\Telegram\Domain\Matchers\IsAdminMatcher;
+
+// todo: ввести приоритетность обработки роутов
 
 $simpleQuestions = [
     'что такое',
@@ -123,18 +123,5 @@ return [
         'help' => '~ - выполнить команду в консоли',
     ],
     */
-
-    [
-        'matcher' => new AnyMatcher,
-        'action' => new DataBaseAction(),
-        'help' => '
-Ифнобот реагирует, если понимает фразу.
-Он может ответить на распространенные вопросы, на пример:
-привет!
-сколько тебе лет?
-как дела?
-Может понять, даже если вы написали слова с ошибками.
-Перестановка слов местами мало на что влияет.',
-    ],
 
 ];
