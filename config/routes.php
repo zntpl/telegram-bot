@@ -79,6 +79,7 @@ return [
         'action' => new EchoAction(),
         'help' => 'echo - отразить сообщение',
     ],
+
     [
         'matcher' => new GroupAndMatcher([
             //new IsAdminMatcher,
@@ -111,7 +112,7 @@ return [
         'help' => 'sleep - погрузить сервер в сон',
     ],
 
-    /*
+
     [
         'matcher' => new GroupAndMatcher([
             new IsAdminMatcher,
@@ -122,6 +123,6 @@ return [
         ]),
         'help' => '~ - выполнить команду в консоли',
     ],
-    */
+
 
 ];
