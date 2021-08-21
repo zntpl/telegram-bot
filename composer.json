@@ -19,7 +19,13 @@
         "znlib/migration": "dev-master",
         "znlib/rest": "dev-master",
         "znlib/telegram": "dev-master",
-        "znsandbox/sandbox": "dev-master"
+        "znsandbox/sandbox": "dev-master",
+        "znuser/identity": "dev-master",
+        "znuser/notify": "dev-master",
+        "znuser/password": "dev-master",
+        "znuser/person": "dev-master",
+        "znuser/rbac": "dev-master",
+        "znuser/registration": "dev-master"
     },
     "require-dev": {
         "zntool/dev": "dev-master",
