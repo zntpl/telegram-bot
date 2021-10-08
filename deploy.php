@@ -19,8 +19,8 @@ App::initVarsFromArray([
     'show_detail' => 0,
 //    'public_directory' => 'public_html',
 
-    'release_public_path' => '{{release_path}}/public_html',
-    'deploy_public_path' => '{{deploy_path}}/public_html',
+    'release_public_path' => '{{release_path}}/public',
+    'deploy_public_path' => '{{deploy_path}}/public',
 
     'keep_releases' => 3,
     'allow_anonymous_stats' => 1,
@@ -37,4 +37,24 @@ App::initVarsFromArray([
             'host' => 'gitlab.com',
         ],
     ],
+]);
+
+task('deploy', [
+    'deploy:info',
+    'confirm',
+    'deploy:lock',
+    'benchmark:start',
+    'release:create',
+    'code:update',
+//    'update:permissions',
+//    'create:symlinks',
+    'composer:install',
+    'zn:init',
+    'zn:migrate_up',
+    'zn:fixtures_import',
+    'release:update_symlinks',
+//    'release:configure_domain',
+    'deploy:unlock',
+    'release:cleanup',
+//    'notify:finished',
 ]);
