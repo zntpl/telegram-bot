@@ -4053,16 +4053,16 @@
         },
         {
             "name": "zncore/base",
-            "version": "v0.0.47",
+            "version": "v0.0.48",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zncore/base.git",
-                "reference": "0ae0249d53110efc7e6238a0fb0a229d50fff112"
+                "reference": "217ff76321670979f9dd073968d37be42d1d87e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zncore/base/zipball/0ae0249d53110efc7e6238a0fb0a229d50fff112",
-                "reference": "0ae0249d53110efc7e6238a0fb0a229d50fff112",
+                "url": "https://api.github.com/repos/zncore/base/zipball/217ff76321670979f9dd073968d37be42d1d87e3",
+                "reference": "217ff76321670979f9dd073968d37be42d1d87e3",
                 "shasum": ""
             },
             "require": {
@@ -4095,9 +4095,9 @@
             ],
             "support": {
                 "issues": "https://github.com/zncore/base/issues",
-                "source": "https://github.com/zncore/base/tree/v0.0.47"
+                "source": "https://github.com/zncore/base/tree/v0.0.48"
             },
-            "time": "2021-10-07T10:27:07+00:00"
+            "time": "2021-10-08T15:50:13+00:00"
         },
         {
             "name": "zncore/contract",
