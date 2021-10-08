@@ -45,4 +45,7 @@ return [
     'Development' => array_merge($commonConfig, [
         'path' => 'dev',
     ]),
+    'Ci' => array_merge($commonConfig, [
+        'path' => 'ci',
+    ]),
 ];
