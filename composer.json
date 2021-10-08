@@ -20,6 +20,7 @@
         "znlib/rest": "dev-master",
         "znlib/telegram": "dev-master",
         "znsandbox/sandbox": "dev-master",
+        "zntool/deployer": "dev-main",
         "znuser/identity": "dev-master",
         "znuser/notify": "dev-master",
         "znuser/password": "dev-master",
