@@ -12,6 +12,7 @@
         "znbundle/log": "dev-main",
         "znbundle/talkbox": "dev-master",
         "zncore/domain": "dev-master",
+        "znfork/danog_madelineproto": "dev-master",
         "znlib/console": "dev-master",
         "znlib/db": "dev-master",
         "znlib/fixture": "dev-master",
@@ -49,6 +50,9 @@
         }
     },
     "repositories": [
-
+        {
+            "type": "git",
+            "url": "https://github.com/znfork/danog_madelineproto.git"
+        }
     ]
 }
