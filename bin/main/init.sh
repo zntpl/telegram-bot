@@ -1,3 +1,3 @@
 #!/bin/sh
-cd ../..
-php init
+cd ../../vendor/bin
+php zn init

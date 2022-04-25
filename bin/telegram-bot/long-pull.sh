@@ -1,3 +1,4 @@
 #!/bin/sh
-cd ../..
-php bin/console telegram:long-pull
+
+cd ../../vendor/bin
+php zn telegram:long-pull
