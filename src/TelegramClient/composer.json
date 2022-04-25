@@ -1,0 +1,58 @@
+{
+    "name": "php7tpl/telegram-client",
+    "minimum-stability":"dev",
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "6.*",
+        "monolog/monolog": "~1.22 || ~2.0",
+        "symfony/cache": "^5.2@dev",
+        "symfony/validator": "4.*",
+        "workerman/workerman": "^4.0",
+        "znbundle/log": "dev-main",
+        "znbundle/talkbox": "dev-master",
+        "zncore/domain": "dev-master",
+        "znfork/danog_madelineproto": "dev-master",
+        "znlib/console": "dev-master",
+        "znlib/db": "dev-master",
+        "znlib/fixture": "dev-master",
+        "znlib/init": "dev-master",
+        "znlib/migration": "dev-master",
+        "znlib/rest": "dev-master",
+        "znlib/telegram": "dev-master",
+        "znsandbox/sandbox": "dev-master",
+        "znuser/identity": "dev-master",
+        "znuser/notify": "dev-master",
+        "znuser/password": "dev-master",
+        "znuser/person": "dev-master",
+        "znuser/rbac": "dev-master",
+        "znuser/registration": "dev-master"
+    },
+    "require-dev": {
+        "zntool/dev": "dev-master",
+        "zntool/test": "dev-master",
+        "zntool/package": "dev-master",
+        "zntool/generator": "dev-master",
+        "zntool/phar": "dev-master"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "MyBundles\\Top\\": "vendor/my-bundles/top/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/znfork/danog_madelineproto.git"
+        }
+    ]
+}
